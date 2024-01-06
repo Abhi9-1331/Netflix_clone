@@ -1,2 +1,2 @@
-# Netflix_clone
-Task:2 at Bharat Intern.
+# Task2 : Netflix_clone using HTML and   CSS
+
