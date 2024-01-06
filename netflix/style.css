@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav button{
+    border: 0;
+    background-color: #db0001;
+    color: aliceblue;
+    border-radius: 4px;
+    font-size:12px;
+    padding: 7px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.blackbutton{
+    background: transparent;
+    border: 1px solid white;
+    display: inline-flex;
+    padding: 7px 10px;
+}
+.blackbutton img{
+    width: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.header_content{
+    position: absolute;
+    top: 27%;
+    left:13%;
+    text-align: center;
+    margin-top: 100px;
+    
+    
+}
+.header_content h1{
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+   
+}
+
+.header_content h3{
+    font-weight: 400;
+    line-height: 70px;
+    font-size: 25px;
+
+
+}
+.email-signup{
+    display: flex;
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 4px;
+    max-width: 470px;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+    
+}
+
+.email-signup input{
+    flex: 1;
+    padding: 20px 10px;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin-right: 5px;
+    padding-right: 100px;
+    
+}
+
+
+.email-signup button{
+    background-color: #db0001;
+    border-radius: 5px;
+    padding: 20px 20px;
+    color: white;
+}
+
+/*--------features--------*/
+
+.features{ 
+    padding: 50px 12%;
+    font-size: 22px;
+   
+}
+   
+
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.text-col h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display:block;
+    margin:auto; 
+    width: 100%;
+}
+
+/*------Faq----*/
+
+.faq{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 12%;
+    margin-top: 20px;
+}
+.faq h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+.accodion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accodion li{
+    list-style: none;
+    width: 100%;
+    padding:5px;
+}
+
+.accodion li label{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.accodion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+
+}
+
+.accodion input[type="radio"]:checked +label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+section{
+    border-top: 6px solid #333;
+}
+
+/*---footer--*/
+.footer{
+    padding: 50px 15% 10px;
+    border-top:6px solid #333;
+    margin-bottom: 30px;
+
+}
+ 
+.footer h3{
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 30px;
+    color: gray;
+}
+.col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+}
+.col a{
+    display:block;
+    text-decoration: none;
+    color:gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+}
+.btn2{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+}
+.last-txt{
+    margin-top: 20px;
+    color: gray;
+
+}
